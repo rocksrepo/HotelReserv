@@ -1,9 +1,19 @@
 package main;
 
-import db.DbConnect;
-
 public class Customer {
-	public static void main(String[] argv) {
-		new DbConnect();
+	private int cusId;
+	private String cusName;
+	
+	public Customer(int cusId, String cusName) {
+		this.cusId = cusId;
+		this.cusName = cusName;
+	}
+	
+	public int getCusId() {
+		return cusId;
+	}
+	
+	public String getCusName() {
+		return cusName;
 	}
 }
