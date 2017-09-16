@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DbConnect {
-	private Connection conn;
+	private Connection conn = null;
 	private String uName = "root";
 	private String pass = "";
 	
@@ -20,5 +20,9 @@ public class DbConnect {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public Connection getConnetion() {
+		return conn;
 	}
 }

@@ -1,5 +1,7 @@
 package main;
 
+import gui.Login;
+
 public class Starter {
 	
 	public static boolean name(int num) {
@@ -7,7 +9,7 @@ public class Starter {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(name(3));
+		new Login().setVisible(true);
 	}
 
 }

@@ -2,11 +2,15 @@ package main;
 
 public class Employee {
 	private int empId;
-	private String empName;
+	private String empfName;
+	private String emplName;
+	private String userId;
 	
-	public Employee(int empId, String empName) {
+	public Employee(int empId, String empfName, String emplName, String userId) {
 		this.empId = empId;
-		this.empName = empName;
+		this.empfName = empfName;
+		this.emplName = emplName;
+		this.userId = userId;
 	}
 	
 	public int getEmpId() {
@@ -14,6 +18,14 @@ public class Employee {
 	}
 	
 	public String getEmpName() {
-		return empName;
+		return empfName;
+	}
+	
+	public String getEmplName() {
+		return emplName;
+	}
+	
+	public String getUserId() {
+		return userId;
 	}
 }
